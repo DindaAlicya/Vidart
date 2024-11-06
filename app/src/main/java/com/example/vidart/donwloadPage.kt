@@ -34,14 +34,14 @@
 
          //export data to DonlodPart2
          downloadButton.setOnClickListener {
-             // Ambil teks dari EditText hanya saat tombol ditekan
+             
              val InstagramUrl = textInputEditText.text.toString()
              if (InstagramUrl.isNotEmpty()) {
                  val i = Intent(this, Donlodpart2::class.java)
                  i.putExtra("instagramUrl", InstagramUrl)
                  startActivity(i)
              } else {
-                 // Tampilkan pesan jika teks kosong
+                 
                  Toast.makeText(this, "URL tidak boleh kosong", Toast.LENGTH_SHORT).show()
              }
          }
