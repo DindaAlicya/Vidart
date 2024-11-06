@@ -28,10 +28,10 @@ class Donlodpart2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.donlod_part2)
 
-        // Get the Instagram URL passed from MainActivity
+        // Instagram URL dari MainActivity
         videoUrl = intent.getStringExtra("instagramUrl") ?: ""
 
-        // Back Button functionality
+       
         val backButton = findViewById<ImageButton>(R.id.BackButton)
         backButton.setOnClickListener {
             onBackPressed()
@@ -46,7 +46,7 @@ class Donlodpart2 : AppCompatActivity() {
         val instagramUrl = recievingData()
 
 
-        // Button listeners for each resolution
+        // coba atur kualitas
         p360p.setOnClickListener {
             saveVideoToStorage(instagramUrl)
         }
